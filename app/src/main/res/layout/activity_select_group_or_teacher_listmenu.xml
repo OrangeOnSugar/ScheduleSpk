@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/select_group_or_teacher_background">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/select_group_or_teacher_listmenu_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выберите\nсвою\nгруппу"
+            android:textColor="@color/select_Group_or_teacher_main_label"
+            android:textSize="36sp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:id="@+id/select_group_or_teacher_listmenu_search_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bar_background"
+            android:layout_marginTop="80dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_below="@id/select_group_or_teacher_listmenu_label">
+
+            <ImageView
+                android:id="@+id/select_group_or_teacher_listmenu_imagesearch"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/searchicon"/>
+            <EditText
+                android:id="@+id/select_group_or_teacher_listmenu_searchtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Введите название группы"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="10dp"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:layout_marginVertical="10dp"
+                android:layout_toRightOf="@id/select_group_or_teacher_listmenu_imagesearch"/>
+
+        </RelativeLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/select_group_or_teacher_listmenu_refreshlayout"
+            android:layout_below="@id/select_group_or_teacher_listmenu_search_group"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/select_group_or_teacher_listmenu_messagelayout"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_marginTop="80dp"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/select_group_or_teacher_listmenu_messagelayout_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:id="@+id/select_group_or_teacher_listmenu_messagelayout_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/select_group_or_teacher_listmenu_messagelayout_image"
+                            android:layout_marginTop="10dp"
+                            android:textSize="14sp"
+                            android:textColor="@color/message_text"
+                            android:gravity="center"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/select_group_or_teacher_listmenu_listgroups_or_teachers"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="30dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

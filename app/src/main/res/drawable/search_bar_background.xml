@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners android:radius="30dp"/>
+    <solid android:color="@color/select_group_or_teacher_mail_group_search_bar_background"/>
+
+</shape>

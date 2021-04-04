@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="26dp"
+    android:height="28dp"
+    android:viewportWidth="26"
+    android:viewportHeight="28">
+  <path
+      android:pathData="M23.4,2.5454H22.1V0H19.5V2.5454H6.5V0H3.9V2.5454H2.6C1.17,2.5454 0,3.6909 0,5.0909V25.4545C0,26.8545 1.17,28 2.6,28H23.4C24.83,28 26,26.8545 26,25.4545V5.0909C26,3.6909 24.83,2.5454 23.4,2.5454ZM23.4,25.4545H2.6V8.9091H23.4V25.4545Z"
+      android:fillColor="@color/calendar_image"/>
+</vector>

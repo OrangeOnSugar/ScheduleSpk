@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroud"
+    tools:context=".fragment_settings">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/header"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@color/black">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:textColor="@color/title"
+                    android:text="Настройки"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/label_change_group_or_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Смена группы/преподавателя"
+        android:textColor="@color/settings_punkt"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/head"/>
+
+    <RelativeLayout
+        android:id="@+id/change_group_or_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_change_group_or_teacher"
+        android:layout_marginTop="5dp"
+        android:background="@color/settings_change_group_or_teacher_background">
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:id="@+id/change_group_or_teacher_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/select_group"
+                android:layout_weight="0.5"
+                android:background="@color/settings_change_group_or_teacher_selected"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/settings_change_group_or_teacher_textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Я студент"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/select_teacher"
+                android:padding="10dp"
+                android:background="@color/settings_change_group_or_teacher_notselected"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/settings_change_group_or_teacher_textcolor"
+                    android:text="Я преподаватель"/>
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/change_group_or_teacher_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_group"
+            android:layout_below="@id/change_group_or_teacher_select"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/change_group_or_teacher_select_title"
+            android:layout_width="wrap_content"
+            android:text="Группа"
+            android:textColor="@color/settings_change_group_or_teacher_colorlabel"
+            android:layout_toRightOf="@id/change_group_or_teacher_image"
+            android:layout_below="@id/change_group_or_teacher_select"
+            android:layout_marginTop="13dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/change_group_or_teacher_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/settings_change_group_or_teacher_colorspinner"
+            android:layout_toRightOf="@id/change_group_or_teacher_select_title"
+            android:text="ИП-318(11)"
+            android:layout_below="@id/change_group_or_teacher_select"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/change_group_or_teacher_pencil"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_toRightOf="@+id/change_group_or_teacher_text"
+            android:src="@drawable/pencil"
+            android:layout_below="@id/change_group_or_teacher_select"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/label_change_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Персонализация"
+        android:textColor="@color/settings_punkt"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/change_group_or_teacher"/>
+
+    <RelativeLayout
+        android:id="@+id/change_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_change_theme"
+        android:layout_marginTop="5dp"
+        android:background="@color/settings_change_group_or_teacher_background">
+
+        <ImageView
+            android:id="@+id/change_theme_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/half_moon_1"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/change_theme_title"
+            android:layout_width="wrap_content"
+            android:text="Ночная тема"
+            android:textColor="@color/settings_change_group_or_teacher_colorlabel"
+            android:layout_toRightOf="@id/change_theme_image"
+            android:layout_marginTop="13dp"
+            android:layout_height="wrap_content"/>
+
+        <Switch
+            android:id="@+id/change_theme_switch"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:thumb="@drawable/switch_thumb_push"
+            android:track="@drawable/switch_track_push"
+            android:layout_marginRight="20dp"
+            android:switchMinWidth="0dp"
+            android:layout_height="wrap_content"
+            android:checked="false"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

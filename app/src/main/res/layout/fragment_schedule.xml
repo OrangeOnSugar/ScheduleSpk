@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_schedule">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/header"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@color/black">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_marginLeft="0dp"
+                    android:textColor="@color/title"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageButton
+                    android:id="@+id/open_calendar"
+                    android:layout_width="35dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/calendar_open"
+                    android:layout_height="35dp"/>
+
+                <ImageButton
+                    android:id="@+id/refresh"
+                    android:layout_width="35dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/open_calendar"
+                    android:background="@drawable/refresh"
+                    android:visibility="gone"
+                    android:layout_height="35dp"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/panel"
+        android:layout_below="@id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/date"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/date_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginTop="25dp"
+                android:textColor="@color/date_path"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_below="@id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="100dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/message_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/none_internet"/>
+
+                    <TextView
+                        android:id="@+id/message_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/message_image"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:textSize="20sp"
+                        android:textColor="@color/message_text"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/scheduleList"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

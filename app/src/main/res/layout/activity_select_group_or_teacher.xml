@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainform"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySelectGroupOrTeacher">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/select_group_or_teacher_mail_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Кто вы?"
+            android:textColor="@color/select_Group_or_teacher_main_label"
+            android:textSize="36sp"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:id="@+id/select_group_or_teacher_mail_group_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_below="@id/select_group_or_teacher_mail_label">
+
+            <ImageView
+                android:id="@+id/select_group_or_teacher_mail_group_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/studentselect"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/select_group_or_teacher_mail_group_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Студент"
+                android:textColor="@color/select_group_or_teacher_mail_group_label"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/select_group_or_teacher_mail_group_image"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/select_group_or_teacher_mail_teacher_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/select_group_or_teacher_mail_group_layout">
+
+            <ImageView
+                android:id="@+id/select_group_or_teacher_mail_teacher_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/teacherselect"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/select_group_or_teacher_mail_teacher_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Преподаватель"
+                android:textColor="@color/select_group_or_teacher_mail_group_label"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/select_group_or_teacher_mail_teacher_image"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

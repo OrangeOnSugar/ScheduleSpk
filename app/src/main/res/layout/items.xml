@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:orientation="vertical"
+    android:layout_marginVertical="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/time_and_number"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginVertical="10dp"
+            android:text=""
+            android:textColor="@color/number"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:id="@+id/time_Cont"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/number"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/time_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/time"
+                android:fontFamily="sans-serif"
+                android:textFontWeight="900"
+                android:textSize="15sp"
+                android:text="08\n09"
+                android:gravity="center_horizontal"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/time_and_number"
+        android:layout_width="wrap_content"
+        android:background="@color/schedule_background"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/kabinet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_alignParentRight="true"
+            android:textColor="@color/kabinet_number"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="@color/schedule_description"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/disciple"
+            android:layout_below="@id/group"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/kabinet"
+            android:maxLines="1"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="sans-serif"
+            android:textFontWeight="900"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/schedule_description"/>
+
+        <TextView
+            android:id="@+id/teacher"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/disciple"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/kabinet"
+            android:layout_marginBottom="6dp"
+            android:maxLines="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/schedule_description"/>
+
+        <TextView
+            android:id="@+id/undergroupe"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teacher"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/kabinet"
+            android:maxLines="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/schedule_description"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#3D72C2</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="backgroud">#F1F1F1</color>
+    <color name="header">#4C8EF0</color>
+    <color name="title">#FFFFFF</color>
+    <color name="calendar_image">#FFFFFF</color>
+    <color name="date_path">#000000</color>
+    <color name="message_text">#000000</color>
+    <color name="number">#000000</color>
+    <color name="time">#FFFFFF</color>
+    <color name="schedule_description">#000000</color>
+    <color name="kabinet_number">#000000</color>
+    <color name="schedule_background">#FFFFFF</color>
+    <color name="schedule_number_background1">#B676E8</color>
+    <color name="schedule_number_background2">#14D076</color>
+    <color name="schedule_number_background3">#D29F52</color>
+    <color name="schedule_number_background4">#6384AB</color>
+    <color name="schedule_number_background5">#22BFA3</color>
+    <color name="schedule_number_background6">#EC1E1E</color>
+    <color name="fragment_notselected">#FFFFFF</color>
+    <color name="fragment_selected">#0016E0</color>
+    <color name="settings_punkt">#AEAEAE</color>
+    <color name="settings_change_group_or_teacher_background">#fff</color>
+    <color name="settings_change_group_or_teacher_textcolor">#FFFFFF</color>
+    <color name="settings_change_group_or_teacher_selected">#44ABB9</color>
+    <color name="settings_change_group_or_teacher_notselected">#468890</color>
+    <color name="settings_change_group_or_teacher_colorlabel">#407093</color>
+    <color name="settings_change_group_or_teacher_colorspinner">#000</color>
+
+    <color name="select_group_or_teacher_logo">#4C8EF0</color>
+    <color name="select_group_or_teacher_background">#F8F8F8</color>
+    <color name="select_Group_or_teacher_main_label">#3A3A3A</color>
+    <color name="select_group_or_teacher_mail_group_label">#2B2B2B</color>
+    <color name="select_group_or_teacher_mail_group_search_bar_background">#DEDEDE</color>
+    <color name="select_group_or_teacher_mail_group_listmenu_message_text">#3A3A3A</color>
+    <color name="select_group_or_teacher_adapter_text">#000</color>
+    <color name="select_group_or_teacher_adapter_background">#FFF</color>
+
+</resources>
